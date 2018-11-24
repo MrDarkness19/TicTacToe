@@ -1,1 +1,2 @@
-HI HI THERE IS README
+# TicTacToe
+A simple TicTacToe game
