@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <stdio.h>
 using namespace std;
-char board[3][3]={'1','2','3','4','5','6','7','8','9'};
+char board[3][3]={'.','.','.','.','.','.','.','.','.'};
 char user='X';
 void BoardMaker()
 {
@@ -19,10 +19,14 @@ void BoardMaker()
 }
 void game()
 {
-	int a;
-	cout<<"Press the number of the field: ";
-	cin>>a;
-
+    string controls;
+	char a='#';
+	board[2][2]=a;
+	cout<<board[2][2];
+    cout<<"Choose a place of your mark";
+	cin>>controls;
+	if(controls=="W")
+        board[1][2]=a;
  switch(a)
     {
         case 1:
